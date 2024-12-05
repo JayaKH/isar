@@ -1,21 +1,25 @@
 name: isar_generator
 description: Code generator for the Isar Database. Finds classes annotated with @IsarCollection.
-version: 2.5.0
+version: 2.6.0
 repository: https://github.com/isar/isar
 homepage: https://isar.dev
 
 environment:
-  sdk: ">=2.16.0 <3.0.0"
+  sdk: ">=2.17.0 <3.0.0"
 
 dependencies:
-  isar: 2.5.0
-  build: ^2.2.1
-  source_gen: ^1.2.1
-  analyzer: ^3.0.0
-  glob: ^2.0.2
-  path: ^1.8.0
-  dart_style: ^2.2.1
+  isar: #2.5.0
+    git:
+      url: https://github.com/JayaKH/isar.git
+      ref: 2.6.0
+      path: packages/isar
+  build: ^2.3.1
+  source_gen: ^1.2.3
+  analyzer: ">=4.7.0 <7.0.0"
+  glob: ^2.1.0
+  path: ^1.8.1
+  dart_style: ^2.2.4
   dartx: ^1.0.0
 
 dev_dependencies:
-  lints: ^1.0.1
+  lints: ^2.0.1
